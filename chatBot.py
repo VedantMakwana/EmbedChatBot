@@ -85,7 +85,7 @@ db_instructEmbedd = FAISS.from_documents(texts, hf)
 retriever = db_instructEmbedd.as_retriever(search_kwargs={"k": 3})
 
 # Hugging Face Endpoint model setup
-token = "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"
+token = "____paste_your_huggingface_access_token____"
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = token
 repo_id = "openai-community/gpt2"
 
